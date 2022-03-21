@@ -11,16 +11,29 @@ html {
     font-size: 100%;
 }
 
+a {
+    color: white;
+    text-decoration: none;
+}
 body {
     display: flex;
     flex-wrap: wrap;
     justify-content: center;  
 }
 
+/* Sidebar */
 .sidebar {
     width: 15%;
     height: calc(100vh - 70px);
-    background-color: #000000;
+    background-color: black; 
+    color: white;
+    font-size: 70%;
+}
+
+.logo {
+    width: 70%;
+    margin-top: 10%;
+    margin-left: 5%;
 }
 
 main {
@@ -55,4 +68,22 @@ footer {
  
 }
 
+.list {
+    list-style: none;
+    margin-top: 10%;
+    margin-left: 5%;
+}
+li {
+    margin-bottom: 5%;
+}
+.list-btn {
+    width: 30px;
+    height: 30px;
+    font-size: 150%;
+    color: #a3a3a3;
+    color: #000000;
+    border-style: none;
+    margin-top: 5%;
+    margin-bottom: 5%;
+}
 
