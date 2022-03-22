@@ -110,14 +110,20 @@ nav {
     justify-content: flex-end;
 }
 
-#nav-btn {
-    height: 50%;
-    width: 15%;
+#btn {
+    height: 40px;
+    width: 200px;
     border-color: white;
     color: white;
     background-color: #080b12;
     border-radius: 20px;
     font-size: 70%;
+    margin-right: 3%;
+}
+
+#nav-btn:hover #btn {
+    height: 45px;
+    width: 210px;
 }
 
 footer {
