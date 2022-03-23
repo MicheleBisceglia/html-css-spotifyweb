@@ -27,16 +27,15 @@ main {
     height: calc(100% - 100px);
     width: 100%;
     overflow: hidden;
-    
 }
 
 /* Sidebar */
 .sidebar {
-    width: 250px;
+    width: 200px;
     height: 100%;
     background-color: black;
     float: left;
-    font-size: 70%;
+    font-size: 60%;
 }
 
 .sidebar a {
@@ -44,7 +43,7 @@ main {
     text-decoration: none;
 }
 .content {
-    width: calc(100% - 250px);
+    width: calc(100% - 200px);
     height: 100%;
     background-color: #141922;
     float: left;
@@ -53,7 +52,7 @@ main {
 .sidebar li{
     list-style: none;
     margin-left: 10%;
-    margin-top: 3%;
+    margin-top: 5%;
 }
 
 .sidebar h3 {
@@ -74,7 +73,7 @@ main {
 }
 .sidebar-top {
     height: calc(100% - 200px);
-    min-height: 100px;
+    min-height: 90px;
     width: 100%;
     overflow: hidden;
 }
@@ -91,6 +90,7 @@ main {
 }
 .list-img {
     height: 20px;
+    float: left;
 } 
 .list-btn {
     color:#080b12;
@@ -107,15 +107,20 @@ main {
 
 /* content */
 .content {
-    overflow: hidden;
+    overflow-y: auto;
 }
+    /* Nav */
 nav {
     height: 80px;
-    width: 100%;
+    width: calc(100% - 200px);
     background-color: #080b12;
     display: flex;
     align-items: center;
     justify-content: flex-end;
+    position: fixed;
+    top: 0;
+    right: 0;
+
 }
 
 #btn {
@@ -133,14 +138,78 @@ nav {
     height: 45px;
     width: 210px;
 }
+   /* /Nav */
+
+   /* Central */
+#content-list {
+    height: 30px;
+    width: 100%;
+    text-align: center;
+}
+
+#content-list li {
+    display: inline-block;
+    color: #a3a3a3;
+    font-size: 60%;
+    margin-left: 2%;
+    margin-top: 1%;
+}
+
+.row-title {
+    width: 100%;
+    color: white;
+    padding-left: 3%;
+    padding-top: 2%;
+    padding-bottom: 1%;
+}
+.row-title p{
+    font-size: 60%;
+    color: #a3a3a3;
+}
+.row {
+     width: 100%;
+     padding-left: 2%;
+}
+.row div {
+    height:100%;
+    width: calc(100% / 6);
+    float: left; 
+    color: white;
+    text-align: center;
+}
+.central {
+    padding-top: 80px;
+}
+.content-img {
+    height: 90%;
+    width: 90%;
+    object-fit: contain;
+}
+
+.row h4 {
+    font-size: 100%;
+    padding-top: 5%;   
+}
+
+.row p {
+    font-size: 60%;
+    color: #a3a3a3;
+}
+.circle {
+    height: 69%;
+    border-radius: 100%; 
+}
+    /* Central */
+/* /Content */
+
 
 footer {
     background-color: #282828;
     height: 100px;
     width: 100%;
+    position: fixed;
+    bottom: 0;
+    right: 0;
+    z-index: 999;
 }
-
-
-
-
 
