@@ -215,3 +215,9 @@ footer {
     z-index: 999;
 }
 
+.footer-col {
+    height: 100px;
+    width: calc(100% / 3);
+    border: solid 2px red;
+    float: left;
+}
