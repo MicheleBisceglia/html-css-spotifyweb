@@ -35,7 +35,7 @@ main {
     height: 100%;
     background-color: black;
     float: left;
-    font-size: 60%;
+    font-size: 70%;
 }
 
 .sidebar a {
@@ -120,7 +120,6 @@ nav {
     position: fixed;
     top: 0;
     right: 0;
-
 }
 
 #btn {
@@ -146,12 +145,15 @@ nav {
     width: 100%;
     text-align: center;
 }
+#content-list li:hover {
+    color: white;
+}
 
 #content-list li {
     display: inline-block;
     color: #a3a3a3;
     font-size: 60%;
-    margin-left: 2%;
+    padding-left: 2%;
     margin-top: 1%;
 }
 
@@ -159,8 +161,8 @@ nav {
     width: 100%;
     color: white;
     padding-left: 3%;
-    padding-top: 2%;
-    padding-bottom: 1%;
+    padding-top: 3%;
+    padding-bottom: 2%;
 }
 .row-title p{
     font-size: 60%;
