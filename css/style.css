@@ -19,11 +19,14 @@ html {
 a {text-decoration: none;
     color: white;
 }
+ul {list-style: none;}
 
+.white {
+    color: white;
+}
 .container {
     height: 100vh;
     width: 100%;
-    overflow: hidden;
     min-width: 560px;
 }
 
@@ -52,11 +55,14 @@ main {
     background-color: #141922;
     float: left;
 }
-
+.active {
+    border-left: 3px solid yellowgreen ;
+    padding-left: 10%;
+}
 .sidebar li{
     list-style: none;
-    margin-left: 10%;
     margin-top: 5%;
+    padding-left: calc(10% + 3px);  
 }
 
 .sidebar h3 {
@@ -131,6 +137,9 @@ main {
 .sidebar li:hover a {
     color: white;
 }
+.sidebar li:hover .list-btn {
+    color: white;
+}
 .img-600 {
     display: none;
     }
@@ -165,7 +174,10 @@ main {
         width: 30px;
         padding-top: 5px;
     }
-   
+   .active {
+       border-left: 0px;
+       padding-top: 10px;
+   }
 }
     
 /*sidebar*/
@@ -225,7 +237,7 @@ nav {
 .row-title {
     width: 100%;
     color: white;
-    padding-left: 3%;
+    padding-left: 30px;
     padding-top: 3%;
     padding-bottom: 2%;
 }
@@ -251,6 +263,13 @@ nav {
     height: 90%;
     width: 90%;
     object-fit: contain;
+}
+.active-content {
+    border-bottom: yellowgreen 2px solid;
+    padding-bottom: 0.5%;
+    max-width: 40%;
+    margin: 0 auto;
+    padding-top: 5%;
 }
 .content-img:hover {
     opacity: 65%;
@@ -279,7 +298,7 @@ nav {
     border-radius: 100%; 
 }
     /* Central */
-@media screen and (max-width:1101px) {
+@media screen and (max-width:1100px) {
     .row {
         display: flex;
         flex-wrap: wrap;
@@ -289,7 +308,7 @@ nav {
     }     
 }
   
-@media screen and (max-width:701px) {
+@media screen and (max-width:700px) {
     .row {
         display: flex;
         flex-wrap: wrap;
@@ -298,8 +317,8 @@ nav {
         width: calc(100% / 2);
     }   
     .content-img {
-        height: 80%;
-        width: 80%;   
+        height: 70%;
+        width: 90%;  
     }
 }
 /* /Content */
@@ -309,10 +328,10 @@ footer {
     height: 100px;
     width: 100%;
     display: flex;
-    /*position: fixed;
+    position: fixed;
     z-index: 999;
     bottom: 0;
-    right: 0;*/   
+    right: 0;  
 }
 
 .album {
@@ -352,7 +371,7 @@ footer {
 
 .player {
     height: 100%;
-    min-width: 300px;
+    min-width: 200px;
     width: calc(100% - 600px);
 }
 
@@ -382,16 +401,17 @@ footer {
 
 .right-player {
     height: 100%;
+    min-width: 150px;
     width: 350px;
     display: flex;
 }
 .rp-icon {
     width: 50%;
-    color: #a3a3a3;
+    color: white;
     display: flex;
     align-items: center;
-    justify-content: end;
-    justify-content: end;
+    justify-content: flex-end;
+    justify-content: flex-end;
 }
 .rp-icon div {
     padding-right: 5%;
