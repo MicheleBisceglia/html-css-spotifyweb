@@ -55,14 +55,15 @@ main {
     background-color: #141922;
     float: left;
 }
-.active {
+#active {
     border-left: 3px solid yellowgreen ;
     padding-left: 10%;
 }
 .sidebar li{
     list-style: none;
     margin-top: 5%;
-    padding-left: calc(10% + 3px);  
+    padding-left: 10%;
+    border-left: 3px solid black ;  
 }
 
 .sidebar h3 {
@@ -174,9 +175,9 @@ main {
         width: 30px;
         padding-top: 5px;
     }
-   .active {
-       border-left: 0px;
+   #active {
        padding-top: 10px;
+       border-left: black 5px;
    }
 }
     
@@ -323,6 +324,7 @@ nav {
 }
 /* /Content */
 
+/* footer */
 footer {
     background-color: #282828;
     height: 100px;
@@ -363,7 +365,12 @@ footer {
     justify-content: center;
     align-items: center;
 }
-
+#album-icons div {
+    padding-left: 10%;
+}
+#album-icons div:hover i{
+    color: white;
+}
 #album-icons i {
     color: #a3a3a3;
     margin-left: 10%;
@@ -421,5 +428,5 @@ footer {
     width: 150px;
     border-bottom: #a3a3a3 solid 4px;
 }
-
+/* /Footer */
 
