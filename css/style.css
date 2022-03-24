@@ -16,6 +16,9 @@ html {
     display: table;
     clear: both;
 }
+a {text-decoration: none;
+    color: white;
+}
 
 .container {
     height: 100vh;
@@ -249,15 +252,27 @@ nav {
     width: 90%;
     object-fit: contain;
 }
+.content-img:hover {
+    opacity: 65%;
+    display: inline-block;
+}
+.play {
+    display: none;
+    position: absolute;
+    top: 35%;
+    left: 15%;
+    font-size: 400%;
+}
 
 .row h4 {
-    font-size: 100%;
-    padding-top: 5%;   
+    font-size: 1rem;
+    padding-top: .5rem;   
 }
 
 .row p {
     font-size: 60%;
     color: #a3a3a3;
+    padding-bottom: 1rem;
 }
 .circle {
     height: 69%;
@@ -294,26 +309,65 @@ footer {
     height: 100px;
     width: 100%;
     /*position: fixed;
-    z-index: 999;*/
+    z-index: 999;
     bottom: 0;
-    right: 0;   
+    right: 0;*/   
 }
 
-.footer-col {
-    height: 100px;
-    width: calc(100% / 3);
-    border: solid 2px red;
-    float: left;
-}
-
-.footer-play {
+/*.footer-play {
     height: 40%;
     width: 100%;
-    background-color: yellow;
+    border-top: solid .3rem #a3a3a3;
 }
 
 .footer-commands {
     height: 60%;
     width: 100%;
-    background-color: red;
+    display: flex;
+    justify-content: center;
+    align-items: center;
 }
+
+.footer-commands a {
+    margin: 10px;
+    color: #a3a3a3;
+}
+#play-btn {
+    font-size: 180%;
+}
+*/
+.album {
+    width: 300px;
+    display: flex;
+    height: 100%;
+}
+.album img { 
+    width: 50px;
+}
+#album-cover {
+    width: 20%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+#album-title {
+    width: 50%;
+    padding-top: 30px;  
+}
+#album-title p {
+    font-size: 80%;
+    color: #a3a3a3;
+}
+
+#album-icons {
+    width: 30%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+#album-icons i {
+    color: white;
+    margin-left: 10%;
+}
+
