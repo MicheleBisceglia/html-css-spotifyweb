@@ -134,7 +134,11 @@ main {
     font-size: 200%;
     background-color: #a3a3a3;
     border-style: none;
+    display: inline;
+    padding-left: 6px;
+    padding-right: 6px;
 }
+
 .sidebar li:hover a {
     color: white;
 }
@@ -335,7 +339,7 @@ footer {
     bottom: 0;
     right: 0;  
 }
-
+/* /Album */
 .album {
     width: 350px;
     display: flex;
@@ -375,13 +379,14 @@ footer {
     color: #a3a3a3;
     margin-left: 10%;
 }
+/* /Album */
 
+/* central player */
 .player {
     height: 100%;
     min-width: 200px;
     width: calc(100% - 600px);
 }
-
 .player-icon {
     height: 60%;
     width: 100%;
@@ -399,18 +404,49 @@ footer {
     font-size: 180%;
 }
 
-.player-bar {
-    height: 100%;
+.central-bar-width {
     width: 60%;
-    margin: 0 auto;
-    border-top: solid 4px #a3a3a3;
 }
+.cb-overlay-width {
+    width: 40%;
+}
+.player-bar {
+    height: 4px;
+    margin: 0 auto;
+    background-color: #a3a3a3;
+    border-radius: 5px;
+    cursor: pointer;
+}
+.player-bar-overlay {
+    height: 100%;
+    position: relative;
+    background-color: white;
+}
+.player-bar-circle {
+    position: relative;
+    left: 38%;
+    height: 15px;
+    width: 15px;
+    background-color: white;
+    transform: translateY(-55%);
+    border-radius: 50%;
+    display: none;
+}
+.player-bar:hover .player-bar-circle {
+    display: block;
+}
+.player-bar:hover .player-bar-overlay {
+    background-color: yellowgreen;
+}
+/* /central player */
 
+/* Right player */
 .right-player {
     height: 100%;
     min-width: 150px;
     width: 350px;
     display: flex;
+    align-items: center;
 }
 .rp-icon {
     width: 50%;
@@ -423,10 +459,16 @@ footer {
 .rp-icon div {
     padding-right: 5%;
 }
-.rp-bar {
-    height: 50%;
-    width: 150px;
-    border-bottom: #a3a3a3 solid 4px;
+
+.rp-bar {   
+    width: 150px;   
 }
+.rp-bar-overlay {   
+    width: 30%;   
+}
+.rp-bar-circle {
+    left: 25%;
+}
+
 /* /Footer */
 
